@@ -35,8 +35,6 @@ pip install opencv-python numpy scipy matplotlib py-trees
 Clone the repo into a fresh ROS 2 workspace:
 
 ```bash
-mkdir -p ~/so101_ws/src
-cd ~/so101_ws/src
 git clone https://github.com/thakkarnitin63/fireloop-isaac-ros2.git .
 ```
 
@@ -60,7 +58,8 @@ so101_ws/
 From the workspace root:
 
 ```bash
-cd ~/so101_ws
+# Navigate to the workspace root
+cd ~/fireloop-isaac-ros2/so-arm/so101_ws
 
 # 1. Install ROS dependencies
 rosdep install --from-paths src --ignore-src -r -y
@@ -83,7 +82,7 @@ You will need **3 things running**: Isaac Sim, the bringup terminal, and the beh
 ### Step 1 — Start Isaac Sim
 
 1. Open NVIDIA Isaac Sim.
-2. Load the provided **SO101 USD scene** (contains robot, red cup, green cup, and bin).
+2. Load the provided **SO101 USDA scene** (contains robot, red cup, green cup, and bin).
 3. Press **Play** in the Isaac Sim toolbar to start the physics simulation. Joint states begin publishing on `/joint_states`.
 
 ### Step 2 — Launch Robot Bringup + MoveIt
