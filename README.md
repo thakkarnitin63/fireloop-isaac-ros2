@@ -35,7 +35,7 @@ pip install opencv-python numpy scipy matplotlib py-trees
 Clone the repo into a fresh ROS 2 workspace:
 
 ```bash
-git clone https://github.com/thakkarnitin63/fireloop-isaac-ros2.git .
+git clone https://github.com/thakkarnitin63/fireloop-isaac-ros2.git 
 ```
 
 Expected structure after cloning:
@@ -90,7 +90,7 @@ You will need **3 things running**: Isaac Sim, the bringup terminal, and the beh
 In a new terminal:
 
 ```bash
-source ~/so101_ws/install/setup.bash
+source ~/fireloop-isaac-ros2/so-arm/so101_ws/install/setup.bash
 
 ros2 launch so101_bringup bringup_moveit.launch.py \
     use_sim_time:=true \
@@ -113,7 +113,7 @@ This starts:
 In a **second terminal**:
 
 ```bash
-source ~/so101_ws/install/setup.bash
+source ~/fireloop-isaac-ros2/so-arm/so101_ws/install/setup.bash
 
 ros2 launch so101_state_machine bt_pick_place.launch.py
 ```
