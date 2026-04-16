@@ -1,8 +1,6 @@
 from setuptools import find_packages, setup
-import os
-from glob import glob
 
-package_name = 'so101_state_machine'
+package_name = 'so101_perception'
 
 setup(
     name=package_name,
@@ -12,13 +10,12 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-        (os.path.join('share', package_name, 'launch'), glob('launch/*.py')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='test',
-    maintainer_email='test@fireloop.com',
-    description='SO101 Behavior Tree pick and place',
+    maintainer='nitin',
+    maintainer_email='thakkarnitin63@gmail.com',
+    description='TODO: Package description',
     license='TODO: License declaration',
     extras_require={
         'test': [
@@ -27,7 +24,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'bt_node = so101_state_machine.bt_node:main',
+            'perception_node = so101_perception.perception_node:main',
         ],
     },
 )

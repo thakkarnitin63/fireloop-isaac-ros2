@@ -375,7 +375,7 @@
     <parent link="lower_arm_link"/>
     <child link="wrist_link"/>
     <axis xyz="0 0 1"/>
-    <limit effort="10" velocity="10" lower="-1.65806" upper="1.65806"/>
+    <limit effort="10" velocity="10" lower="-1.75" upper="1.75"/>
   </joint>
 
   <transmission name="wrist_flex_trans">

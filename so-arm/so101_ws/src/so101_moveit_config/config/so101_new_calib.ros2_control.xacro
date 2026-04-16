@@ -34,6 +34,7 @@
                 <state_interface name="position">
                   <param name="initial_value">${initial_positions['shoulder_pan']}</param>
                 </state_interface>
+                <state_interface name="velocity"/>
                 <state_interface name="effort"/>
             </joint>
             <joint name="shoulder_lift">
@@ -41,6 +42,7 @@
                 <state_interface name="position">
                   <param name="initial_value">${initial_positions['shoulder_lift']}</param>
                 </state_interface>
+                <state_interface name="velocity"/>
                 <state_interface name="effort"/>
             </joint>
             <joint name="elbow_flex">
@@ -48,6 +50,7 @@
                 <state_interface name="position">
                   <param name="initial_value">${initial_positions['elbow_flex']}</param>
                 </state_interface>
+                <state_interface name="velocity"/>
                 <state_interface name="effort"/>
             </joint>
             <joint name="wrist_flex">
@@ -55,6 +58,7 @@
                 <state_interface name="position">
                   <param name="initial_value">${initial_positions['wrist_flex']}</param>
                 </state_interface>
+                <state_interface name="velocity"/>
                 <state_interface name="effort"/>
             </joint>
             <joint name="wrist_roll">
@@ -62,6 +66,7 @@
                 <state_interface name="position">
                   <param name="initial_value">${initial_positions['wrist_roll']}</param>
                 </state_interface>
+                <state_interface name="velocity"/>
                 <state_interface name="effort"/>
             </joint>
             <joint name="gripper">
@@ -69,6 +74,7 @@
                 <state_interface name="position">
                   <param name="initial_value">${initial_positions['gripper']}</param>
                 </state_interface>
+                <state_interface name="velocity"/>
                 <state_interface name="effort"/>
             </joint>
 

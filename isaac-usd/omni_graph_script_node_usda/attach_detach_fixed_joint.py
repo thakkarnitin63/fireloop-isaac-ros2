@@ -17,7 +17,8 @@ JOINTS_XFORM_STR = "/World/so101_new_calib/GraspJoints"
 JOINT_PATH_STR   = "/World/so101_new_calib/GraspJoints/cup_grasp_fixed_joint"
 
 # Grasp frame on the jaw (jaw-local)
-GRASP_POS0 = Gf.Vec3d(-0.01962, -0.04449, 0.02761)
+# GRASP_POS0 = Gf.Vec3d(-0.01962, -0.04449, 0.02761)
+GRASP_POS0 = Gf.Vec3d(0, 0, 0)
 
 # Rotation handling (pick one mode)
 GRASP_ROT_IS_QUAT = False

@@ -168,6 +168,8 @@ def _launch_setup(context, *args, **kwargs):
         arguments=["-d", rviz_config_path],
         parameters=[moveit_common_params, {"use_sim_time": use_sim_time}],
     )
+    
+    
 
     return [
         robot_state_publisher,
@@ -175,6 +177,7 @@ def _launch_setup(context, *args, **kwargs):
         spawn_jsb,
         *spawners,
         move_group,
-        rviz2
+        rviz2,
+        
     ]
 

@@ -1,0 +1,15 @@
+# ROS 2 Build Artifacts (Deep Search)
+**/build/
+**/install/
+**/log/
+
+# Python & System
+**/__pycache__/
+**/*.pyc
+.DS_Store
+.vscode/
+
+# Ignore your workspace-level symlinks
+so-arm/so101_ws/build/
+so-arm/so101_ws/install/
+so-arm/so101_ws/log/
